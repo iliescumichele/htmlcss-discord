@@ -22,30 +22,14 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
+
+ul li a, li{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
 /* ----------------------------- */
 
-.border {
-  border:2px solid red;
-}
-
-.spazio-sezione-top-bottom {
-  padding: 50px 0;
-  border:2px solid blue;
-}
-
-.col-sx-big {
-  width:calc(60% - 10px);
-  margin-right: 10px;
-}
-
-.col-sx-small {
-  width:40%;
-}
-
-.contenuto-finto {
-  height: 300px;
-  background-color: grey;
-}
 
 
 /* HEADER */
@@ -92,12 +76,12 @@ header .jumbotron .box-header{
 /* MAIN */
 .section-bkg-color-1{
   background-color: #ffff;
-  width: 100%;
+  width: 100vw;
 }
 
 .section-bkg-color-2{
   background-color: #f6f6f6;
-  width: 100%;
+  width: 100vw;
 }
 
 section.padding-section{
@@ -144,13 +128,70 @@ section .small-text{
   text-align: center;
 }
 
-.botttom-row-text{
-  font-size: 40px;
+.middle-row-img img{
+  padding: 0 50%; /*errore*/
+}
+
+.top-row-text{
+  padding-top: 100px;
+}
+
+section .bottom-row-text{
+  background-image: url(../img/stars.svg);
+  width: 400px;
+  margin: 10px 50%;
+  
+}
+
+.botttom-row-text p{
+  font-size: 60px;
   font-weight: 600;
+
 }
 /* ----------------------------- */
 
 footer{
   background-color: #23272a;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+footer hr{
+  margin: 20px 0;
+  color: #4a5781;
+}
+
+footer .foot-col-sx{
+  width: 26%;
+}
+
+.foot-links-prodotto, .foot-links-compagnia, .foot-links-risorse, .foot-links-norme{
+  width: calc(40 / 4);
+  margin-left: 7%;
+}
+
+footer strong p{ /* mini title in footer */
+  color: #738adc;
+  font-size: 23px;
+}
+
+.footer-links-text, .icons{
+  color: white;
+}
+
+footer .language{
+  margin: 10px 0;
+}
+
+footer .foot-col-sx .icons span{
+  margin-right: 20px;
+}
+
+footer .language .flag{
+  height: 12px ; 
+}
+
+footer .footer-mini-title, footer ul li{
+  padding-bottom: 10px ;
 }
 
